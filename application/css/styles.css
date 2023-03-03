@@ -1,0 +1,78 @@
+
+.dash-block {
+    min-height: 9em;
+}
+.dash-block-long {
+    min-height: 26em;
+}
+.block-value {
+    font-size: 50px;
+    color:cornflowerblue;
+    text-align: center;
+    padding: 0.5em;
+    margin: 0;
+    height: auto;
+    width: auto;
+}
+h4 {
+    margin: 0;
+}
+.logboard {
+    font-size: 20px !important;
+}
+.establish {
+    background-color: limegreen !important;
+}
+.lost {
+    background-color: orangered !important;
+}
+.timestamp {        
+    text-align: right;
+    font-size: 11px;
+    color: black;
+    position: relative;
+    top: 0.75em;
+    width: fit-content;
+    margin: auto;
+    margin-right: 0;
+    padding: 0 5px;
+    border-radius: 5px;
+}
+.message {
+    padding: 2px;
+    padding-left: 6px;
+    font-size: 18px;
+    border-top: outset;
+    color: lightslategray;
+    padding-right: 5em;
+    animation: newactivity 1s 1;
+    -webkit-animation: newactivity 1s 1;
+}
+.heading {
+    line-height: normal;
+    max-height: 14px;
+}
+.uniqueid {    
+    font-size: 14px;
+    text-align: left;
+    position: relative;
+    bottom: 0;
+    color: black;
+}
+.cc-status {
+    margin-left: 1em !important;
+    width: 26px !important;
+    height: 25px !important;
+    padding: 4px !important;
+    padding-right: 23px !important;
+    color: white !important;
+    border-radius: 12px !important;
+}
+@keyframes newactivity
+{
+    0%      {background-color:white;}
+    25%     {background-color:lightgoldenrodyellow;}
+    50%     {background-color:yellow;}
+    75%     {background-color:lightgoldenrodyellow;}
+    100%    {background-color:white;}
+}

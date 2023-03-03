@@ -1,0 +1,20 @@
+
+
+<script src="/app/js/users.js"></script>
+<div id="users" style="padding: 2em; padding-top: 4em;">
+    <div class="ui two column grid">
+        <template id="template-user-state">
+            <div class="user" id="userid-%userid%">
+                <div class="timestamp %status%">%sign%</div>
+                <div class="message"><p class="uniqueid">%id%</p>%message%</div>
+            </div>
+        </template>
+        <div class="column">
+            <div id="log-users" class="ui segment raised dash-block-long">
+                <h4 style="display: inline;">ALL USERS</h4><i id="users-connection-status" class="wifi icon cc-status"></i>
+                <div class="ui list middle aligned" id="users-inject">  
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

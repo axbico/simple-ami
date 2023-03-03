@@ -1,0 +1,28 @@
+
+<div id="leftmenu">
+    <div class="ui left fixed vertical tabular menu" style="margin: 0; padding-top: 80px;">
+        <a class="active item" data-tab="dashboard">Dashboard</a>
+        <a class="item" data-tab="users">Users</a>
+    </div>
+    <script> $(document).ready(function() { $('.menu .item').tab(); }); </script>
+</div>
+
+<div id="maincontent" style="padding-left: 15rem;">
+    <div class="ui fixed inverted menu">
+      <div class="ui container" style="margin: 0 !important;">
+        <a class="header item" style="padding: 0 1.5em 0 1.5em;">
+            <img class="logo" style="height: 30px; width: 30px; margin: 0; margin-right: 10px;" src="logo.png">TELEMOCK
+        </a>
+      </div>
+    </div>
+
+    <div id="inject-board">
+        <div id="inject-dashboard" class="ui bottom attached active tab segment" data-tab="dashboard">
+            <script>$("#inject-dashboard").load("app/html/dashboard.html");</script>
+        </div>
+        
+        <div id="inject-users" class="ui bottom attached tab segment" data-tab="users">
+            <script>$("#inject-users").load("app/html/users.html");</script>
+        </div>
+    </div>
+</div>

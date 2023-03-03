@@ -1,0 +1,40 @@
+
+
+<script src="/app/js/dashboard.js"></script>
+<div id="dashboard" style="padding: 2em; padding-top: 4em;">
+    <div class="ui three column doubling grid">
+        <div class="column">
+          <div class="ui raised segment dash-block">
+            <h4>ALL USERS</h4><div id="all-users" class="block-value" style="color: black;">0</div>
+        </div>
+        </div>
+        <div class="column">
+          <div class="ui raised segment dash-block">
+            <h4>ACTIVE USERS</h4><div id="active-users" class="block-value">0</div>
+        </div>
+        </div>
+        <div class="column">
+          <div class="ui raised segment dash-block">
+            <h4>ACTIVE CALLS</h4><div id="active-calls" class="block-value">0</div>
+        </div>
+        </div>
+    </div>
+
+    <div class="ui two column doubling grid">
+        <template id="template-log-recent-activities">
+            <div class="activity">
+                <div class="timestamp %status%">%timestamp%</div>
+                <div class="message"><p class="uniqueid">%id%</p>%message%</div>
+            </div>
+        </template>
+        <div class="column">
+            RECENT ACTIVITIES
+            <div id="log-recent-activities" class="ui segment raised dash-block-long logboard"></div>
+        </div>
+        <div class="column">
+            CALL ACTIVITIES
+            <div id="log-call-activities" class="ui segment raised dash-block-long logboard"></div>
+        </div>
+    </div>
+    
+</div>
